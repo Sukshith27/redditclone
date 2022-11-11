@@ -16,9 +16,6 @@ const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList data={data} renderItem={renderItem} />
-      <TouchableOpacity onPress={() => AsyncStorage.clear()}>
-        <Text style={{backgroundColor: 'red', padding: 20}}>CLEAR</Text>
-      </TouchableOpacity>
     </SafeAreaView>
   );
 };
